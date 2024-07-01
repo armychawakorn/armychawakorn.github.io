@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <div class="d-flex justify-content-start">
+                    <h3>Todo list</h3>
+                </div>
+                <div class="input-group mb-3">
+                    <input id="input" type="text" class="form-control" placeholder="ใส่สิ่งที่คุณต้องการจะทำ"
+                        aria-label="todo name" aria-describedby="button-add" />
+                    <button class="btn btn-primary w-25" type="button" id="button-add" onclick="addtodo()">
+                        +
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="d-flex justify-content-end gap-3">
+                    <h3>List</h3>
+                    <button class="btn btn-danger w-25" type="button" id="button-delete" onclick="removetodo()">
+                        Delete
+                    </button>
+                </div>
+                <li class="d-flex justify-content-between">
+                    <div>
+                        <input type="checkbox" id="checkall" />Select All
+                    </div>
+                    <div>items</div>
+                </li>
+                <hr>
+                <ul class="list-group" id="listtodo">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var checkall = document.querySelector("#checkall");
+    checkall.addEventListener("change", function () {
+        let listElement = document.getElementById("listtodo");
+        let listItems = listElement.querySelectorAll("input[type='checkbox']");
+        listItems.forEach((item) => {
+            item.checked = checkall.checked;
+        });
+    });
+    function addtodo() {
+        let inputValue = document.getElementById("input");
+
+        if (inputValue.value.length == 0) {
+            return;
+        }
+        //create new element <li>
+        let newElement = document.createElement("li"); //<li></li>
+        newElement.classList.add("list-group-item"); //<li class="list-group-item"></li>
+
+        let divElement = document.createElement("div");
+        divElement.classList.add("form-check");
+
+        let inputElement = document.createElement("input");
+        inputElement.classList.add("form-check-input");
+        inputElement.type = "checkbox";
+
+        let labelElement = document.createElement("label");
+        labelElement.classList.add("form-check-label");
+        labelElement.textContent = inputValue.value;
+
+        divElement.appendChild(inputElement);
+        divElement.appendChild(labelElement);
+        newElement.appendChild(divElement);
+
+        let listElement = document.getElementById("listtodo");
+        listElement.appendChild(newElement);
+
+        inputValue.value = "";
+        CheckIfTodoEmpty();
+    }
+
+    function removetodo() {
+        let listElement = document.getElementById("listtodo");
+        let listItems = listElement.querySelectorAll("li");
+        listItems.forEach((item) => {
+            let inputElement = item.querySelector("input[type='checkbox']:checked");
+            if (inputElement) {
+                listElement.removeChild(item);
+            }
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</html>
