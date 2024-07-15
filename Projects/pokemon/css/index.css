@@ -1,0 +1,7 @@
+.card{
+    transition: .3s ease-in-out;
+}
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.075);
+    transition: .3s ease-in-out;
+}
