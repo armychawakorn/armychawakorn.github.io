@@ -12,12 +12,14 @@
 
 <body>
     <nav class="bg-dark p-3" style="color: white;">
-        <div class="d-flex justify-content-between">
-            <div class="d-flex justify-content-start gap-3">
-                <h2 id="pokenmon-name">Pokemon Lab</h2>
-                <img src="https://cdn-icons-png.flaticon.com/512/2094/2094510.png" alt="pokemon-icon"
-                    style="height: 40px; width: auto;">
-            </div>
+        <div class="d-flex justify-content-between flex-wrap">
+            <a href="../" class="text-white text-decoration-none">
+                <div class="d-flex justify-content-start gap-3">
+                    <h2 id="pokenmon-name">Pokemon Lab</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2094/2094510.png" alt="pokemon-icon"
+                        style="height: 40px; width: auto;">
+                </div>
+            </a>
             <div class="mt-auto mb-auto">
                 Mr.Chawakorn Nuangpha
             </div>
@@ -25,12 +27,54 @@
     </nav>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                 <div class="card">
-                    <img src="" class="card-img-top" alt="" id="pokemon-img">
-                    <div class="card-body">
-                        <h5 class="card-title
-                " id="pokemon-name">Pokemon Name</h5>
+                    <div class="row ps-3 pt-3">
+                        <div class="col-2">
+                            <a href="../" class="text-white textdecoration-none">
+                                <div class="badge bg-primary">
+                                    < Back </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                            <div style="position: relative;">
+                                <img src="" class="card-img-top" alt="" id="pokemon-img" style="object-fit: cover;">
+                                <div style="position: absolute; top: 25%; left: 60%; border: 1px solid black; border-radius: 50%; width: 100px; background-color: white;" class="p-2 text-center">
+                                    <span>ควย</span>
+                                </div>
+                                <div style="position: absolute; background-color: black;" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="card-body">
+                                <h3 class="card-title" id="pokemon-name">Pokemon Name</h3>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <span class="card-title">ความสูง:</span>
+                                    <span class="card-title" id="pokemon-height">137 cm</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="card-title">น้ำหนัก:</span>
+                                    <span class="card-title" id="pokemon-weight">38 kg</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="card-title">ประเภท:</span>
+                                    <span class="card-title" id="pokemon-type"></span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="card-title">ความสามารถ:</span>
+                                    <span class="card-title" id="pokemon-ability"></span>
+                                </div>
+                                <div>
+                                    <span>สถานะ:</span>
+                                    <div class="ps-3" id="pokemon-state">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
