@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.5 on win32)" generated="2024-10-23T23:32:33.591360" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterTestcases &amp; LoginTestcases">
+<suite id="s1-s1" name="RegisterTestcases" source="C:\Users\Administrator\Documents\Software Test\RobotFramework\testcases\RegisterTestcases.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-10-23T23:32:33.759513" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-23T23:32:33.759513" elapsed="1.673014"/>
+</kw>
+<test id="s1-s1-t1" name="As a user, I want to register with my credential" line="12">
+<kw name="When user register to RentalCar website with ${email} and ${valid_password}" owner="RegisterPageKeywords" source_name="user register to RentalCar website with ${email} and ${password}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:35.434529" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:35.434529" elapsed="0.082074"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:35.434529" elapsed="0.082074"/>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-10-23T23:32:35.434529" elapsed="0.082074"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:35.517604" level="INFO">Typing text 'jet11@jet.com' into text field 'id=email'.</msg>
+<msg time="2024-10-23T23:32:35.649724" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:35.649724" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:35.517604" elapsed="0.133121">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:37.650747" level="INFO">Typing text 'jet11@jet.com' into text field 'id=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.650747" elapsed="0.060068"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:35.517604" elapsed="2.193211"/>
+</kw>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2024-10-23T23:32:35.516603" elapsed="2.194212"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:37.711815" level="INFO">Typing text '123456789zacK' into text field 'id=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.711815" elapsed="0.049046"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.711815" elapsed="0.049046"/>
+</kw>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-10-23T23:32:37.710815" elapsed="0.050046"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:37.761862" level="INFO">Typing text '123456789zacK' into text field 'id=confirmpassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.761862" elapsed="0.047043"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.760861" elapsed="0.048044"/>
+</kw>
+<arg>id=confirmpassword</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-10-23T23:32:37.760861" elapsed="0.048044"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:37.809906" level="INFO">Clicking element 'xpath=//button[contains(@class, "bg-[#5D66F6]") and text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.809906" elapsed="0.033033"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.809906" elapsed="0.033033"/>
+</kw>
+<arg>xpath=//button[contains(@class, "bg-[#5D66F6]") and text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-10-23T23:32:37.808905" elapsed="0.034034"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:35.433527" elapsed="2.409412"/>
+</kw>
+<kw name="Then Wait until element is ready to read text" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-23T23:32:37.843941" elapsed="0.222246"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${expected_text}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=Expected text "${expected_text}" not found in element "${locator}" after ${timeout}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-10-23T23:32:38.066187" elapsed="0.012011"/>
+</kw>
+<arg>xpath=//div[@class='swal2-html-container']</arg>
+<arg>สมัครสมาชิกสำเร็จ</arg>
+<status status="PASS" start="2024-10-23T23:32:37.842939" elapsed="0.235259"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:35.433527" elapsed="2.644671"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-23T23:32:38.079199" elapsed="2.083239"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:33.616383" elapsed="6.546055"/>
+</suite>
+<suite id="s1-s2" name="LoginTestcases" source="C:\Users\Administrator\Documents\Software Test\RobotFramework\testcases\LoginTestcases.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-10-23T23:32:40.172283" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-23T23:32:40.172283" elapsed="1.621195"/>
+</kw>
+<test id="s1-s2-t1" name="As a user, I want to login success with valid credential" line="12">
+<kw name="When user login to RentalCar website with ${email} and ${valid_password}" owner="LoginPageKeywords" source_name="user login to RentalCar website with ${username} and ${password}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:41.795479" level="INFO">Clicking element 'xpath=//button[text()="เข้าสู่ระบบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:41.795479" elapsed="0.079073"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:41.794479" elapsed="0.080073"/>
+</kw>
+<arg>xpath=//button[text()="เข้าสู่ระบบ"]</arg>
+<status status="PASS" start="2024-10-23T23:32:41.794479" elapsed="0.080073"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:41.875552" level="INFO">Typing text 'jet11@jet.com' into text field 'id=email'.</msg>
+<msg time="2024-10-23T23:32:42.006673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:42.006673" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:41.874552" elapsed="0.132121">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:44.006835" level="INFO">Typing text 'jet11@jet.com' into text field 'id=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.006835" elapsed="0.059569"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:41.874552" elapsed="2.191852"/>
+</kw>
+<arg>id=email</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-10-23T23:32:41.874552" elapsed="2.191852"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:44.067405" level="INFO">Typing text '123456789zacK' into text field 'id=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.067405" elapsed="0.049045"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.066404" elapsed="0.050046"/>
+</kw>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-10-23T23:32:44.066404" elapsed="0.050046"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:44.117451" level="INFO">Clicking element 'xpath=//button[contains(@class, "bg-[#5D66F6]") and text()="เข้าสู่ระบบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.117451" elapsed="0.033033"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.117451" elapsed="0.033033"/>
+</kw>
+<arg>xpath=//button[contains(@class, "bg-[#5D66F6]") and text()="เข้าสู่ระบบ"]</arg>
+<status status="PASS" start="2024-10-23T23:32:44.117451" elapsed="0.033033"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:41.794479" elapsed="2.357005"/>
+</kw>
+<kw name="Then RentalCar website should display home page and display message as &quot;ยินดีต้อนรับสู่บริการเช่ารถยนต์ของเรา&quot;" owner="HomePageKeywords" source_name="RentalCar website should display home page and display message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:44.160492" level="INFO">Current page contains text 'ยินดีต้อนรับสู่บริการเช่ารถยนต์ของเรา'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.152486" elapsed="0.008006"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.151484" elapsed="0.010009"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2024-10-23T23:32:44.151484" elapsed="0.010009"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:44.151484" elapsed="0.010009"/>
+</kw>
+<kw name="user logout from RentalCar website" owner="HomePageKeywords" type="TEARDOWN">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:44.162495" level="INFO">Clicking element 'xpath=//button[contains(@class, "bg-blue-500") and text() = "ออกจากระบบ"]'.</msg>
+<msg time="2024-10-23T23:32:44.249576" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:44.249576" level="FAIL">Element with locator 'xpath=//button[contains(@class, "bg-blue-500") and text() = "ออกจากระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:44.162495" elapsed="0.088081">Element with locator 'xpath=//button[contains(@class, "bg-blue-500") and text() = "ออกจากระบบ"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:46.250599" level="INFO">Clicking element 'xpath=//button[contains(@class, "bg-blue-500") and text() = "ออกจากระบบ"]'.</msg>
+<msg time="2024-10-23T23:32:46.817565" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:46.817565" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF766E9B095+29557]
+	(No symbol) [0x00007FF766E0FA50]
+	(No symbol) [0x00007FF766CCB56A]
+	(No symbol) [0x00007FF766CDE05B]
+	(No symbol) [0x00007FF766CD2D94]
+	(No symbol) [0x00007FF766CD0C14]
+	(No symbol) [0x00007FF766CD44B7]
+	(No symbol) [0x00007FF766CD4570]
+	(No symbol) [0x00007FF766D217AB]
+	(No symbol) [0x00007FF766D13416]
+	(No symbol) [0x00007FF766D4718A]
+	(No symbol) [0x00007FF766D12E86]
+	(No symbol) [0x00007FF766D473A0]
+	(No symbol) [0x00007FF766D6851C]
+	(No symbol) [0x00007FF766D46F33]
+	(No symbol) [0x00007FF766D1116F]
+	(No symbol) [0x00007FF766D122D1]
+	GetHandleVerifier [0x00007FF7671CC96D+3378253]
+	GetHandleVerifier [0x00007FF767218497+3688311]
+	GetHandleVerifier [0x00007FF76720D1CB+3642539]
+	GetHandleVerifier [0x00007FF766F5A6B6+813462]
+	(No symbol) [0x00007FF766E1AB5F]
+	(No symbol) [0x00007FF766E16B74]
+	(No symbol) [0x00007FF766E16D10]
+	(No symbol) [0x00007FF766E05C1F]
+	BaseThreadInitThunk [0x00007FFFF6AC7374+20]
+	RtlUserThreadStart [0x00007FFFF829CC91+33]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:46.250599" elapsed="0.568968">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF766E9B095+29557]
+	(No symbol) [0x00007FF766E0FA50]
+	(No symbol) [0x00007FF766CCB56A]
+	(No symbol) [0x00007FF766CDE05B]
+	(No symbol) [0x00007FF766CD2D94]
+	(No symbol) [0x00007FF766CD0C14]
+	(No symbol) [0x00007FF766CD44B7]
+	(No symbol) [0x00007FF766CD4570]
+	(No symbol) [0x00007FF766D217AB]
+	(No symbol) [0x00007FF766D13416]
+	(No symbol) [0x00007FF766D4718A]
+	(No symbol) [0x00007FF766D12E86]
+	(No symbol) [0x00007FF766D473A0]
+	(No symbol) [0x00007FF766D6851C]
+	(No symbol) [0x00007FF766D46F33]
+	(No symbol) [0x00007FF766D1116F]
+	(No symbol) [0x00007FF766D122D1]
+	GetHandleVerifier [0x00007FF7671CC96D+3378253]
+	GetHandleVerifier [0x00007FF767218497+3688311]
+	GetHandleVerifier [0x00007FF76720D1CB+3642539]
+	GetHandleVerifier [0x00007FF766F5A6B6+813462]
+	(No symbol) [0x00007FF766E1AB5F]
+	(No symbol) [0x00007FF766E16B74]
+	(No symbol) [0x00007FF766E16D10]
+	(No symbol) [0x00007FF766E05C1F]
+	BaseThreadInitThunk [0x00007FFFF6AC7374+20]
+	RtlUserThreadStart [0x00007FFFF829CC91+33]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:48.819590" level="INFO">Clicking element 'xpath=//button[contains(@class, "bg-blue-500") and text() = "ออกจากระบบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:48.819590" elapsed="0.020019"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:44.161493" elapsed="4.679116"/>
+</kw>
+<arg>xpath=//button[contains(@class, "bg-blue-500") and text() = "ออกจากระบบ"]</arg>
+<status status="PASS" start="2024-10-23T23:32:44.161493" elapsed="4.679116"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:44.161493" elapsed="4.679116"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:41.793478" elapsed="7.047131"/>
+</test>
+<test id="s1-s2-t2" name="As a user, I fail to login with invalid credential" line="17">
+<kw name="When user login to RentalCar website with ${email} and ${invalid_password}" owner="LoginPageKeywords" source_name="user login to RentalCar website with ${username} and ${password}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:48.842620" level="INFO">Clicking element 'xpath=//button[text()="เข้าสู่ระบบ"]'.</msg>
+<msg time="2024-10-23T23:32:49.252986" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:49.252986" level="FAIL">Element with locator 'xpath=//button[text()="เข้าสู่ระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:48.842620" elapsed="0.411367">Element with locator 'xpath=//button[text()="เข้าสู่ระบบ"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:51.254145" level="INFO">Clicking element 'xpath=//button[text()="เข้าสู่ระบบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:51.254145" elapsed="0.029026"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:48.842620" elapsed="2.440551"/>
+</kw>
+<arg>xpath=//button[text()="เข้าสู่ระบบ"]</arg>
+<status status="PASS" start="2024-10-23T23:32:48.842620" elapsed="2.440551"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:51.284172" level="INFO">Typing text 'jet11@jet.com' into text field 'id=email'.</msg>
+<msg time="2024-10-23T23:32:51.377257" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:51.377257" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:51.284172" elapsed="0.094086">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:53.378272" level="INFO">Typing text 'jet11@jet.com' into text field 'id=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:53.378272" elapsed="0.049045"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:51.284172" elapsed="2.143145"/>
+</kw>
+<arg>id=email</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-10-23T23:32:51.284172" elapsed="2.143145"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:53.427317" level="INFO">Typing text '123456789zacK!' into text field 'id=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:53.427317" elapsed="0.050047"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:53.427317" elapsed="0.050047"/>
+</kw>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-10-23T23:32:53.427317" elapsed="0.050047"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:53.478363" level="INFO">Clicking element 'xpath=//button[contains(@class, "bg-[#5D66F6]") and text()="เข้าสู่ระบบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T23:32:53.478363" elapsed="0.025023"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:53.478363" elapsed="0.026024"/>
+</kw>
+<arg>xpath=//button[contains(@class, "bg-[#5D66F6]") and text()="เข้าสู่ระบบ"]</arg>
+<status status="PASS" start="2024-10-23T23:32:53.478363" elapsed="0.026024"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:48.841619" elapsed="4.662768"/>
+</kw>
+<kw name="Then RentalCar website should display display validate login fail message as &quot;เข้าสู่ระบบไม่สำเร็จ โปรดตรวจสอบอีเมลหรือรหัสผ่านของคุณ&quot;" owner="LoginPageKeywords" source_name="RentalCar website should display display validate login fail message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:53.609483" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T23:32:53.609483" level="FAIL">Page should have contained text 'เข้าสู่ระบบไม่สำเร็จ โปรดตรวจสอบอีเมลหรือรหัสผ่านของคุณ' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-10-23T23:32:53.505389" elapsed="0.105096">Page should have contained text 'เข้าสู่ระบบไม่สำเร็จ โปรดตรวจสอบอีเมลหรือรหัสผ่านของคุณ' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-23T23:32:55.616364" level="INFO">Current page contains text 'เข้าสู่ระบบไม่สำเร็จ โปรดตรวจสอบอีเมลหรือรหัสผ่านของคุณ'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-23T23:32:55.611155" elapsed="0.005209"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-23T23:32:53.505389" elapsed="2.110975"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2024-10-23T23:32:53.504387" elapsed="2.111977"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:53.504387" elapsed="2.111977"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:48.841619" elapsed="6.775747"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-23T23:32:55.618366" elapsed="2.115804"/>
+</kw>
+<status status="PASS" start="2024-10-23T23:32:40.164274" elapsed="17.569896"/>
+</suite>
+<status status="PASS" start="2024-10-23T23:32:33.592361" elapsed="24.143811"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="RegisterTestcases &amp; LoginTestcases">RegisterTestcases &amp; LoginTestcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="RegisterTestcases">RegisterTestcases &amp; LoginTestcases.RegisterTestcases</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="LoginTestcases">RegisterTestcases &amp; LoginTestcases.LoginTestcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
